@@ -4,6 +4,12 @@
 <svg width="400px" height="300px" xml:lang="fr"
 xmlns="http://www.w3.org/2000/svg"
 xmlns:xlink="http://www.w3.org/1999/xlink">
-	<title>Text</title>
-		<text x="0" y="15" fill="red" transform="rotate(30 20,40)">J'ai mal partout</text>
+	<title>Blur</title>
+		<defs>
+    <filter id="f1" x="0" y="0">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+    </filter>
+  </defs>
+  <rect width="90" height="90" stroke="green" stroke-width="3"
+  fill="red" filter="url(#f1)" />
 </svg>
